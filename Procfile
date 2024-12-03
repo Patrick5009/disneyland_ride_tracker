@@ -1,1 +1,1 @@
-gunicorn disneyland_ride_tracker.wsgi
+web: gunicorn disneyland_ride_tracker.wsgi
