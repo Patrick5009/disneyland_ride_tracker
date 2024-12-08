@@ -39,5 +39,9 @@ def updateRide(request, pk):
 def deleteRide(request, pk):
     item = Ride.objects.get(id=pk)
 
+    if request.method == 'POST':
+        item.delete()
+        return redirect('/')
+
     context = {'item':item}
     return render(request, 'ride_tracker/delete.html', context) 
