@@ -34,3 +34,7 @@ def updateRide(request, pk):
     context = {'form':form}
 
     return render(request, 'ride_tracker/update_ride.html', context)
+
+
+def deleteRide(request, pk):
+    return render(request, 'ride_tracker/delete.html') 
