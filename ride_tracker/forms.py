@@ -9,3 +9,4 @@ class RideForm(forms.ModelForm):
     class Meta:
         model = Ride
         fields = ['ride_name', 'state']
+        labels = {'state': 'Visited this ride?',}
