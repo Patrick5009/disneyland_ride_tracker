@@ -19,3 +19,8 @@ def index(request):
     context = {'ride_tracker':ride_tracker, 'form':form}
     return render(request, 'ride_tracker/rides.html', context)
 
+
+def updateRide(request, pk):
+    ride = Ride.objects.get(id=pk)
+
+    return render(request, 'ride_tracker/update_ride.html')
