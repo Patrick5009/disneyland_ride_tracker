@@ -25,6 +25,12 @@ def updateRide(request, pk):
 
     form = RideForm(instance=ride)
 
+    if request.method == 'POST':
+        form = RideForm(request.POST, instance=ride)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+
     context = {'form':form}
 
     return render(request, 'ride_tracker/update_ride.html', context)
