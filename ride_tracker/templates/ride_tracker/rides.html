@@ -8,6 +8,7 @@
 
 {% for ride in ride_tracker %}
     <div>
+        <a href="{% url 'update_ride' ride.id %}">Update</a>
         <p>{{ride}}</p>
     </div>
 
