@@ -8,4 +8,4 @@ class RideForm(forms.ModelForm):
     
     class Meta:
         model = Ride
-        fields = ['ride_name']
+        fields = ['ride_name', 'state']
