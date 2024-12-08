@@ -37,4 +37,7 @@ def updateRide(request, pk):
 
 
 def deleteRide(request, pk):
-    return render(request, 'ride_tracker/delete.html') 
+    item = Ride.objects.get(id=pk)
+
+    context = {'item':item}
+    return render(request, 'ride_tracker/delete.html', context) 
