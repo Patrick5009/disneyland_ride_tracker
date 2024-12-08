@@ -23,4 +23,8 @@ def index(request):
 def updateRide(request, pk):
     ride = Ride.objects.get(id=pk)
 
-    return render(request, 'ride_tracker/update_ride.html')
+    form = RideForm(instance=ride)
+
+    context = {'form':form}
+
+    return render(request, 'ride_tracker/update_ride.html', context)

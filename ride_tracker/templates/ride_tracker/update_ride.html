@@ -1,5 +1,8 @@
 <h3>Update Ride</h3>
 
 <form>
+    {% csrf_token %}
+
+    {{form}}
     <input type="submit" name="Update Ride">
 </form>
