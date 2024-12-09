@@ -5,42 +5,45 @@ Ride Tracker
 {% endblock %}
 
 {% block content %}
+<div class="container d-flex justify-content-center align-items-start mt-5 mb-3">
+    <div class="backplate p-4 shadow-lg w-100">
+        <h3 class="text-center mb-4">Which ride?</h3>
 
-<h3>To do</h3>
+        <form method="POST" action="/" class="mb-4">
+            {% csrf_token %}
+            <div class="mb-3">
+                <input type="text" name="ride_name" id="ride-name" list="rides-list" placeholder="Pick or type a ride name" class="form-control">
+                <datalist id="rides-list">
+                    <option value="Space Mountain"></option>
+                    <option value="Pirates of the Caribbean"></option>
+                    <option value="Haunted Mansion"></option>
+                    <option value="Splash Mountain"></option>
+                    <option value="Big Thunder Mountain"></option>
+                </datalist>
+            </div>
+            <div class="form-check mb-3">
+                <input type="checkbox" name="state" id="state" class="form-check-input">
+                <label for="state" class="form-check-label">Visited this ride?</label>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Add Ride</button>
+        </form>
 
-<!-- <form method="POST" action="/">
-    {% csrf_token %}
-    {{ form.ride_name }}
-    <input type="submit" value="Create Ride">
-</form> -->
-
-<form method="POST" action="/">
-    {% csrf_token %}
-    <input type="text" name="ride_name" id="ride-name" list="rides-list" placeholder="Pick or type a ride name">
-    <datalist id="rides-list">
-        <option value="Space Mountain"></option>
-        <option value="Pirates of the Caribbean"></option>
-        <option value="Haunted Mansion"></option>
-        <option value="Splash Mountain"></option>
-        <option value="Big Thunder Mountain"></option>
-    </datalist>
-    <input type="submit" value="Add Ride">
-    <br>
-    <label for="state">
-        <input type="checkbox" name="state" id="state"> Visited this ride?
-    </label>
-</form>
-
-{% for ride in ride_tracker %}
-    <div>
-        <a href="{% url 'update_ride' ride.id %}">Update</a>
-        <a href="{% url 'delete' ride.id %}">Delete</a>
-        <p>
-            {% if ride.state %}
-                <span class="done-text">DONE | </span>
-            {% endif %}
-            {{ ride }}
-        </p>
+        <div>
+            {% for ride in ride_tracker %}
+            <div class="d-flex justify-content-between align-items-center mb-2 py-2 px-3 bg-light rounded">
+                <div>
+                    {% if ride.state %}
+                        <span class="done-text">DONE | </span>
+                    {% endif %}
+                    {{ ride }}
+                </div>
+                <div>
+                    <a href="{% url 'update_ride' ride.id %}" class="btn btn-sm btn-info me-1">Update</a>
+                    <a href="{% url 'delete' ride.id %}" class="btn btn-sm btn-danger">Delete</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
-{% endfor %}
+</div>
 {% endblock %}

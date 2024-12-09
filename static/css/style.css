@@ -2,3 +2,30 @@
     color: red;
     font-weight: bold;
 }
+
+.backplate {
+    background-color: #010a30; /* Light gray */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px; /* Ensures it doesn't stretch too wide on big screens */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+
+.bg-light {
+    background-color: #2e4c6b !important;
+    border-radius: 5px;
+}
+
+form input, form button {
+    border-radius: 5px;
+}
+
+form input::placeholder {
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* body {
+    background-color: #e9ecef; Subtle background for the entire app
+} */
