@@ -8,10 +8,27 @@ Ride Tracker
 
 <h3>To do</h3>
 
-<form method="POST" action="/">
+<!-- <form method="POST" action="/">
     {% csrf_token %}
     {{ form.ride_name }}
     <input type="submit" value="Create Ride">
+</form> -->
+
+<form method="POST" action="/">
+    {% csrf_token %}
+    <input type="text" name="ride_name" id="ride-name" list="rides-list" placeholder="Select or type a ride name">
+    <datalist id="rides-list">
+        <option value="Space Mountain"></option>
+        <option value="Pirates of the Caribbean"></option>
+        <option value="Haunted Mansion"></option>
+        <option value="Splash Mountain"></option>
+        <option value="Big Thunder Mountain"></option>
+    </datalist>
+    <input type="submit" value="Add Ride">
+    <br>
+    <label for="state">
+        <input type="checkbox" name="state" id="state"> Visited this ride?
+    </label>
 </form>
 
 {% for ride in ride_tracker %}

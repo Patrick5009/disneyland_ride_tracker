@@ -11,11 +11,18 @@ def index(request):
     form = RideForm()
 
     if request.method == 'POST':
-        form = RideForm(request.POST)
-        if form.is_valid():
-            form.save()
-        return redirect('/')
+        ride_name = request.POST.get('ride_name')  # Get the ride name from the form
+        state = request.POST.get('state') == 'on'  # Convert checkbox to boolean
 
+        if ride_name:  # Only save if a ride name is provided
+            Ride.objects.create(ride_name=ride_name, state=state, user=request.user if request.user.is_authenticated else None)
+        return redirect('/')
+        # old code below/ get rid before due time
+        # form = RideForm(request.POST)
+        # if form.is_valid():
+        #     form.save()
+        # return redirect('/')
+    form = RideForm()
     context = {'ride_tracker':ride_tracker, 'form':form}
     return render(request, 'ride_tracker/rides.html', context)
 
