@@ -1,20 +1,10 @@
-<!-- <h3>To do</h3>
+{% extends 'base.html' %}
 
-<form method="POST" action="/">
-    {% csrf_token %}
-    {{form.ride_name}}
-    <input type="submit" name="Create Ride">
-</form>
+{% block title %}
+Ride Tracker
+{% endblock %}
 
-{% for ride in ride_tracker %}
-    <div>
-        <a href="{% url 'update_ride' ride.id %}">Update</a>
-        <a href="{% url 'delete' ride.id %}">Delete</a>
-        <p class="{% if ride.state %}strikethrough{% endif %}">{{ ride }}</p>
-        <p>{{ride}}</p>
-    </div>
-
-{% endfor %} -->
+{% block content %}
 
 <h3>To do</h3>
 
@@ -36,3 +26,4 @@
         </p>
     </div>
 {% endfor %}
+{% endblock %}
