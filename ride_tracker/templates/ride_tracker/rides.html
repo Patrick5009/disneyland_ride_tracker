@@ -1,4 +1,4 @@
-<h3>To do</h3>
+<!-- <h3>To do</h3>
 
 <form method="POST" action="/">
     {% csrf_token %}
@@ -10,7 +10,29 @@
     <div>
         <a href="{% url 'update_ride' ride.id %}">Update</a>
         <a href="{% url 'delete' ride.id %}">Delete</a>
+        <p class="{% if ride.state %}strikethrough{% endif %}">{{ ride }}</p>
         <p>{{ride}}</p>
     </div>
 
+{% endfor %} -->
+
+<h3>To do</h3>
+
+<form method="POST" action="/">
+    {% csrf_token %}
+    {{ form.ride_name }}
+    <input type="submit" value="Create Ride">
+</form>
+
+{% for ride in ride_tracker %}
+    <div>
+        <a href="{% url 'update_ride' ride.id %}">Update</a>
+        <a href="{% url 'delete' ride.id %}">Delete</a>
+        <p>
+            {% if ride.state %}
+                <span class="done-text">DONE | </span>
+            {% endif %}
+            {{ ride }}
+        </p>
+    </div>
 {% endfor %}
