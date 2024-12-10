@@ -1,10 +1,17 @@
+/* responsive background image */
+body {
+    background: url('https://res.cloudinary.com/diud2gagh/image/upload/castle_re65eg.webp') no-repeat center center fixed;
+    background-size: cover; 
+}
+
+
 .done-text {
     color: red;
     font-weight: bold;
 }
 
 .backplate {
-    background-color: #010a30; /* Light gray */
+    background-color: rgba(1, 10, 48, 0.75);
     border-radius: 10px;
     width: 100%;
     max-width: 800px; /* Ensures it doesn't stretch too wide on big screens */

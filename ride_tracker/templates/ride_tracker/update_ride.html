@@ -6,15 +6,17 @@ Update Ride
 
 {% block content %}
 <div class="container my-5">
-    <div class="card shadow p-5 ">
-        <h3 class="text-center mb-4 ">Update Ride</h3>
+    <!-- Full-width background underlay -->
+    <div class="card shadow p-4">
+        <h3 class="text-center mb-4">Update Ride</h3>
 
-        <form method="POST" action="">
+        <!-- Center the input box -->
+        <form method="POST" action="" class="d-flex justify-content-center">
             {% csrf_token %}
-            <div class="mb-3">
+            <div class="w-100" style="max-width: 800px;">
                 {{ form.as_p }}
+                <button type="submit" class="btn btn-primary w-100">Update Ride</button>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Update Ride</button>
         </form>
     </div>
 </div>
