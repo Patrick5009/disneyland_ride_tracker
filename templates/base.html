@@ -54,9 +54,19 @@
     </header>
 
     <main class="container mt-4">
+        <!-- Message Backplate -->
+    <div class="user-status text-center">
+        {% if user.is_authenticated %}
+        <p>You are logged in as {{ user }}</p>
+        {% else %}
+        <p>You are not logged in</p>
+        {% endif %}
+    </div>
+    <div> 
         {% block content %}
         <!-- Page-specific content goes here -->
         {% endblock %}
+    </div>
     </main>
 
     <footer class="bg-dark text-white text-center py-3 mt-auto">
