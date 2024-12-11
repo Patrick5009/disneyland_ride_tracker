@@ -1,4 +1,153 @@
+/* Responsive background image */
+body {
+    background: url('https://res.cloudinary.com/diud2gagh/image/upload/castle_re65eg.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* For red DONE | text in completed rides */
 .done-text {
     color: red;
     font-weight: bold;
 }
+
+/* backplate under the list */
+.backplate {
+    background-color: rgba(1, 10, 48, 0.75); 
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+}
+
+/* individual list items background*/
+.bg-light {
+    background-color: #2e4c6b !important;
+    border-radius: 5px;
+}
+
+
+/* placeholder text decoration */
+form input::placeholder {
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* button styles */
+.btn {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+
+/* user status message backplate */
+.user-status {
+    background-color: rgba(1, 10, 48, 0.75); 
+    color: #ffffff; 
+    border-radius: 10px; 
+    max-width: 800px; 
+    width: 100%;
+    margin: 0 auto; 
+    padding: 10px 20px; 
+    position: relative; 
+    text-align: center; 
+    font-size: 24px;
+}
+
+
+.btn-close {
+    color: #ffffff; 
+    opacity: 1; 
+    background: none; 
+    border: none; 
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem; 
+    /* the X dismiss icon for the success confirmation messages will not show without this url */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E");
+    background-size: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* size adjustment for update and delete page backplates */
+.update-delete-backplate{
+    max-width: 810px;
+}
+
+/* ride items layout */
+.ride-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: nowrap; 
+    text-align: center; 
+}
+
+/* ride content */
+.ride-content {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* text style for ride */
+.ride-text {
+    flex: 1;
+    margin-right: 10px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+/* stop buttons from stacking */
+.ride-buttons {
+    display: flex;
+    gap: 10px; 
+    flex-wrap: nowrap; 
+}
+
+
+/* structure for small screens */
+/* center everything and stack text above buttons */
+@media (max-width: 500px) {
+    .ride-item {
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .ride-content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .ride-text {
+        margin-bottom: 10px; 
+        width: 100%;
+        text-align: center; 
+    }
+
+    .ride-buttons {
+        justify-content: center; 
+    }
+}
+
+
