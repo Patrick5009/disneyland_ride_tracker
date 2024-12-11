@@ -12,7 +12,7 @@ body {
 
 /* backplate under the list */
 .backplate {
-    background-color: rgba(1, 10, 48, 0.75); 
+    background-color: rgba(1, 10, 48, 0.9); 
     border-radius: 10px;
     width: 100%;
     max-width: 800px; 
@@ -52,6 +52,18 @@ form input::placeholder {
     background-color: #28a745;
 }
 
+.alert-success {
+    background-color: rgba(29, 66, 30, 0.95); /* Semi-transparent green */
+    color: #ffffff;
+    border: 1px solid rgba(76, 175, 80, 0.9);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    text-align: center;
+    font-size: 24;
+    font-weight: 900;
+}
+
 /* enter message fontsize */
 .topline{
     font-size: 24px;
@@ -59,8 +71,9 @@ form input::placeholder {
 
 /* user status message backplate */
 .user-status {
-    background-color: rgba(1, 10, 48, 0.75); 
+    background-color: rgba(1, 10, 48, 0.9); 
     color: #ffffff; 
+    border: 1px solid rgba(76, 175, 80, 0.9);
     border-radius: 10px; 
     max-width: 800px; 
     width: 100%;
@@ -73,7 +86,7 @@ form input::placeholder {
 
 
 .btn-close {
-    color: #ffffff; 
+    /* color: #ffffff; 
     opacity: 1; 
     background: none; 
     border: none; 
@@ -81,12 +94,12 @@ form input::placeholder {
     height: 1em;
     position: absolute;
     top: 0.5rem;
-    right: 0.5rem; 
+    right: 0.5rem;  */
     /* the X dismiss icon for the success confirmation messages will not show without this url */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E");
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E");
     background-size: 1em;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 /* size adjustment for update and delete page backplates */

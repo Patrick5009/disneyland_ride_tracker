@@ -56,7 +56,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-8 col-sm-10">
                 {% for message in messages %}
-                <div class="backplate alert {{ message.tags }} alert-dismissible fade show text-center" role="alert">
+                <div class=" alert {{ message.tags }} alert-success alert-dismissible fade show text-center" role="alert">
                     {{ message }}
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
@@ -69,7 +69,7 @@
         <!-- Message Backplate -->
     <div class="user-status text-center">
         {% if user.is_authenticated %}
-        <p>Welcome {{ user }}</p>
+        <p class="topline">Currently logged in as {{ user }}</p>
         {% else %}
         <p class="topline">Plan all the Disneyland rides you want to visit </p>
         <p>You must <a href="{% url 'account_login' %}">log in</a> or <a href="{% url 'account_signup' %}">sign up</a>to track your rides!</p>
