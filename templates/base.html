@@ -72,7 +72,7 @@
         {% if user.is_authenticated %}
         <p>Welcome {{ user }}</p>
         {% else %}
-        <p>You MUST log in to track your rides!</p>
+        <p>You MUST <a href="{% url 'account_login' %}">log in</a> or <a href="{% url 'account_signup' %}">sign up</a>to track your rides!</p>
         {% endif %}
     </div>
     <div> 

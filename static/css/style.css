@@ -4,13 +4,13 @@ body {
     background-size: cover;
 }
 
-/* Styling for completed rides */
+/* For red DONE | text in completed rides */
 .done-text {
     color: red;
     font-weight: bold;
 }
 
-/* backplate style */
+/* backplate under the list */
 .backplate {
     background-color: rgba(1, 10, 48, 0.75); 
     border-radius: 10px;
@@ -26,17 +26,14 @@ body {
     border-radius: 5px;
 }
 
-/* Form elements */     /* POSSIBLY DELETE THIS */
-form input, form button {
-    border-radius: 5px;
-}
 
+/* placeholder text decoration */
 form input::placeholder {
     color: #6c757d;
     font-style: italic;
 }
 
-/* Form button styling */
+/* button styles */
 .btn {
     border-radius: 5px;
     padding: 10px;
@@ -56,7 +53,7 @@ form input::placeholder {
 }
 
 
-/* User Status Backplate */
+/* user status message backplate */
 .user-status {
     background-color: rgba(1, 10, 48, 0.75); 
     color: #ffffff; 
@@ -67,6 +64,7 @@ form input::placeholder {
     padding: 10px 20px; 
     position: relative; 
     text-align: center; 
+    font-size: 24px;
 }
 
 
@@ -87,65 +85,68 @@ form input::placeholder {
     background-repeat: no-repeat;
 }
 
+/* size adjustment for update and delete page backplates */
 .update-delete-backplate{
     max-width: 810px;
 }
 
-/* Ride Item Flexbox Layout */
+/* ride items layout */
 .ride-item {
     display: flex;
-    justify-content: space-between; /* Default: Separate text and buttons */
-    align-items: center; /* Align items vertically */
-    flex-wrap: nowrap; /* Prevent wrapping by default */
-    text-align: center; /* Center text for smaller screens */
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: nowrap; 
+    text-align: center; 
 }
 
-/* Ride Content */
+/* ride content */
 .ride-content {
     display: flex;
-    flex-direction: row; /* Default: Text and buttons side by side */
-    align-items: center; /* Vertically align text and buttons */
+    flex-direction: row; 
+    align-items: center; 
     justify-content: space-between;
     width: 100%;
 }
 
-/* Ride Text Styling */
+/* text style for ride */
 .ride-text {
     flex: 1;
-    margin-right: 10px; /* Space between text and buttons */
-    white-space: nowrap; /* Prevent wrapping on larger screens */
-    overflow: hidden; /* Prevent overflow */
-    text-overflow: ellipsis; /* Truncate long text */
+    margin-right: 10px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
 }
 
-/* Ride Buttons Styling */
+/* stop buttons from stacking */
 .ride-buttons {
     display: flex;
-    gap: 10px; /* Space between buttons */
-    flex-wrap: nowrap; /* Prevent buttons from stacking */
+    gap: 10px; 
+    flex-wrap: nowrap; 
 }
 
-/* Responsive Behavior for Small Screens */
+
+/* structure for small screens */
+/* center everything and stack text above buttons */
 @media (max-width: 500px) {
     .ride-item {
-        flex-direction: column; /* Stack text above buttons */
-        justify-content: center; /* Center align everything */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
     }
 
     .ride-content {
-        flex-direction: column; /* Stack text above buttons */
-        align-items: center; /* Center text and buttons */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .ride-text {
-        margin-bottom: 10px; /* Space between text and buttons */
+        margin-bottom: 10px; 
         width: 100%;
-        text-align: center; /* Center text */
+        text-align: center; 
     }
 
     .ride-buttons {
-        justify-content: center; /* Center buttons horizontally */
+        justify-content: center; 
     }
 }
 
