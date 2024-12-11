@@ -24,7 +24,7 @@
 <body>
     <header class="bg-primary text-white p-3">
         <nav class="container navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="{% url 'rides' %}">Ride Tracker</a>
+            <a class="navbar-brand" href="{% url 'rides' %}">Disneyland Ride Tracker</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,14 +52,27 @@
             </div>
         </nav>
     </header>
+    <!-- Message Notifications -->
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+                {% for message in messages %}
+                <div class="backplate alert {{ message.tags }} alert-dismissible fade show text-center" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 
     <main class="container mt-4">
         <!-- Message Backplate -->
     <div class="user-status text-center">
         {% if user.is_authenticated %}
-        <p>You are logged in as {{ user }}</p>
+        <p>Welcome {{ user }}</p>
         {% else %}
-        <p>You are not logged in</p>
+        <p>You MUST log in to track your rides!</p>
         {% endif %}
     </div>
     <div> 

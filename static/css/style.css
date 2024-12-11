@@ -12,23 +12,22 @@ body {
 
 /* backplate style */
 .backplate {
-    background-color: rgba(1, 10, 48, 0.75); /* Dark transparent background */
+    background-color: rgba(1, 10, 48, 0.75); 
     border-radius: 10px;
     width: 100%;
-    max-width: 800px; /* Ensures it doesn't stretch too wide on big screens */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    padding: 20px; /* Added consistent padding */
+    max-width: 800px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
 }
 
-/* Background light style */
+/* individual list items background*/
 .bg-light {
     background-color: #2e4c6b !important;
     border-radius: 5px;
 }
 
 /* Form elements */
-form input,
-form button {
+form input, form button {
     border-radius: 5px;
 }
 
@@ -59,26 +58,34 @@ form input::placeholder {
 
 /* User Status Backplate */
 .user-status {
-    background-color: rgba(1, 10, 48, 0.75); /* Same dark transparent background */
-    color: #ffffff; /* White text for contrast */
-    border-radius: 10px; /* Fully rounded corners */
-    max-width: 800px; /* Match the ride list width */
+    background-color: rgba(1, 10, 48, 0.75); 
+    color: #ffffff; 
+    border-radius: 10px; 
+    max-width: 800px; 
     width: 100%;
-    margin: 0 auto; /* Center horizontally */
-    padding: 10px 20px; /* Inner padding */
-    position: relative; /* Ensures it stacks naturally above the ride list */
-    text-align: center; /* Centers the text */
+    margin: 0 auto; 
+    padding: 10px 20px; 
+    position: relative; 
+    text-align: center; 
 }
 
-/* Ride List Backplate */
-.ride-list {
-    border-radius: 10px; /* Fully rounded corners */
-    background-color: rgba(1, 10, 48, 0.75); /* Match the user-status backplate */
-    color: #ffffff; /* White text for contrast */
-    max-width: 800px; /* Consistent width */
-    width: 100%;
-    margin: 0 auto; /* Center horizontally */
-    padding: 20px; /* Inner padding */
+
+.btn-close {
+    color: #ffffff; 
+    opacity: 1; 
+    background: none; 
+    border: none; 
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem; 
+    /* the X dismiss icon for the success confirmation messages will not show without this url */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E");
+    background-size: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 
