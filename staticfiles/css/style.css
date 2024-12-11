@@ -13,6 +13,7 @@ body {
 /* backplate under the list */
 .backplate {
     background-color: rgba(1, 10, 48, 0.9); 
+    border: 1px solid rgba(76, 175, 168, 0.9);
     border-radius: 10px;
     width: 100%;
     max-width: 800px; 
@@ -73,7 +74,7 @@ form input::placeholder {
 .user-status {
     background-color: rgba(1, 10, 48, 0.9); 
     color: #ffffff; 
-    border: 1px solid rgba(76, 175, 80, 0.9);
+    border: 1px solid rgba(76, 175, 168, 0.9);
     border-radius: 10px; 
     max-width: 800px; 
     width: 100%;
