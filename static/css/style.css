@@ -26,7 +26,7 @@ body {
     border-radius: 5px;
 }
 
-/* Form elements */
+/* Form elements */     /* POSSIBLY DELETE THIS */
 form input, form button {
     border-radius: 5px;
 }
@@ -87,5 +87,66 @@ form input::placeholder {
     background-repeat: no-repeat;
 }
 
+.update-delete-backplate{
+    max-width: 810px;
+}
+
+/* Ride Item Flexbox Layout */
+.ride-item {
+    display: flex;
+    justify-content: space-between; /* Default: Separate text and buttons */
+    align-items: center; /* Align items vertically */
+    flex-wrap: nowrap; /* Prevent wrapping by default */
+    text-align: center; /* Center text for smaller screens */
+}
+
+/* Ride Content */
+.ride-content {
+    display: flex;
+    flex-direction: row; /* Default: Text and buttons side by side */
+    align-items: center; /* Vertically align text and buttons */
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Ride Text Styling */
+.ride-text {
+    flex: 1;
+    margin-right: 10px; /* Space between text and buttons */
+    white-space: nowrap; /* Prevent wrapping on larger screens */
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Truncate long text */
+}
+
+/* Ride Buttons Styling */
+.ride-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    flex-wrap: nowrap; /* Prevent buttons from stacking */
+}
+
+/* Responsive Behavior for Small Screens */
+@media (max-width: 500px) {
+    .ride-item {
+        flex-direction: column; /* Stack text above buttons */
+        justify-content: center; /* Center align everything */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .ride-content {
+        flex-direction: column; /* Stack text above buttons */
+        align-items: center; /* Center text and buttons */
+    }
+
+    .ride-text {
+        margin-bottom: 10px; /* Space between text and buttons */
+        width: 100%;
+        text-align: center; /* Center text */
+    }
+
+    .ride-buttons {
+        justify-content: center; /* Center buttons horizontally */
+    }
+}
 
 
