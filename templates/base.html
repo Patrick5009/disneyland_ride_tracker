@@ -1,6 +1,5 @@
 {% load static %}
 
-<!-- {% url 'about' as about_url %} -->
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
@@ -72,7 +71,8 @@
         {% if user.is_authenticated %}
         <p>Welcome {{ user }}</p>
         {% else %}
-        <p>You MUST <a href="{% url 'account_login' %}">log in</a> or <a href="{% url 'account_signup' %}">sign up</a>to track your rides!</p>
+        <p class="topline">Plan all the Disneyland rides you want to visit </p>
+        <p>You must <a href="{% url 'account_login' %}">log in</a> or <a href="{% url 'account_signup' %}">sign up</a>to track your rides!</p>
         {% endif %}
     </div>
     <div> 

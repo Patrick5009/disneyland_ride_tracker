@@ -52,6 +52,10 @@ form input::placeholder {
     background-color: #28a745;
 }
 
+/* enter message fontsize */
+.topline{
+    font-size: 24px;
+}
 
 /* user status message backplate */
 .user-status {
@@ -64,7 +68,7 @@ form input::placeholder {
     padding: 10px 20px; 
     position: relative; 
     text-align: center; 
-    font-size: 24px;
+    font-size: 18px;
 }
 
 
