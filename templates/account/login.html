@@ -1,28 +1,33 @@
 {% extends "base.html" %}
-
 {% load i18n %}
 {% load account socialaccount %}
-
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
+
+<!-- Main container -->
 <div class="container d-flex justify-content-center align-items-center vh-100 move-up">
     <div class="backplate">
         <h3 class="text-center mb-3">{% trans "Sign In" %}</h3>
 
-        <p class="text-center">{% blocktrans %}Welcome back to the Disneyland Ride Tracker. Please log in to continue. If
+        <!-- Introductory message -->
+        <p class="text-center">{% blocktrans %}Welcome back to the Disneyland Ride Tracker. Please log in to continue.
+            If
             you
             have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
             first.{% endblocktrans %}</p>
 
+        <!-- Login form -->
         <form class="login" method="POST" action="{% url 'account_login' %}">
             {% csrf_token %}
             {{ form.as_p }}
             {% if redirect_field_value %}
             <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
             {% endif %}
+            <!-- Submit button -->
             <button class="btn btn-primary w-100" type="submit">{% trans "Sign In" %}</button>
         </form>
     </div>
 </div>
+
 {% endblock %}

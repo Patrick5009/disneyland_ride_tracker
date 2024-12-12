@@ -5,15 +5,19 @@ Update Ride
 {% endblock %}
 
 {% block content %}
+
+<!-- Main container -->
 <div class="update-delete-backplate container text-center my-5">
     <div class="update-backplate p-4">
         <h3 class="mb-4">Update Ride</h3>
 
+        <!-- Form to update the selected ride -->
         <form method="POST" action="">
             {% csrf_token %}
             <div class="mb-3">
                 {{ form.as_p }}
             </div>
+            <!-- Buttons for updating or canceling -->
             <div class="d-flex justify-content-center">
                 <a href="{% url 'rides' %}" class="btn btn-secondary me-2">Cancel</a>
                 <button type="submit" class="btn btn-primary">Update</button>
@@ -21,4 +25,5 @@ Update Ride
         </form>
     </div>
 </div>
+
 {% endblock %}

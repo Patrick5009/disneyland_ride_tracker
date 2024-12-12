@@ -5,10 +5,13 @@ Ride Tracker
 {% endblock %}
 
 {% block content %}
+
+<!-- User instructions -->
 <div class="container d-flex justify-content-center align-items-start mt-5 mb-3">
     <div class="backplate p-4 shadow-lg w-100">
         <h3 class=" prompt text-center mb-4">Type in a ride or just pick one,<br>then hit the Add button</h3>
 
+        <!-- Form to add a new ride -->
         <form method="POST" action="/" class="mb-4">
             {% csrf_token %}
             <div class="mb-3">
@@ -38,11 +41,8 @@ Ride Tracker
                     <option value="Astro Orbitor"></option>
                     <option value="Red Car Trolley"></option>
                 </datalist>
+                <!-- Submit button to add the ride -->
             </div>
-            <!-- <div class="form-check mb-3">
-                <input type="checkbox" name="state" id="state" class="form-check-input">
-                <label for="state" class="form-check-label">Finished this ride?</label>
-            </div> -->
             <button type="submit" class="btn btn-success w-100">Add Ride</button>
         </form>
 
@@ -51,18 +51,18 @@ Ride Tracker
             <div class="ride-item bg-light rounded p-2 mb-2">
                 <p class="ride-text">
                     {% if ride.state %}
-                        <span class="done-text">DONE | </span>
+                    <!-- Shows the ride has been completed -->
+                    <span class="done-text">DONE | </span>
                     {% endif %}
                     {{ ride }}
                 </p>
+                <!-- Buttons for updating or deleting the ride -->
                 <div class="ride-buttons">
                     <a href="{% url 'update_ride' ride.id %}" class="btn btn-sm btn-info">Update</a>
                     <a href="{% url 'delete' ride.id %}" class="btn btn-sm btn-danger">Delete</a>
                 </div>
             </div>
-            
             {% endfor %}
-
         </div>
     </div>
 </div>

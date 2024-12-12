@@ -5,11 +5,14 @@ Delete Ride
 {% endblock %}
 
 {% block content %}
+
+<!-- Main container -->
 <div class="update-delete-backplate container text-center my-5">
     <div class="delete-backplate p-4">
         <h3 class="text-center mb-4">Delete Ride</h3>
         <p class="mb-4">Are you sure you want to delete "<strong>{{ item }}</strong>"?</p>
 
+        <!-- Cancel and Confirm Buttons -->
         <div class="d-flex justify-content-center">
             <a href="{% url 'rides' %}" class="btn btn-secondary me-2">Cancel</a>
 
@@ -20,4 +23,5 @@ Delete Ride
         </div>
     </div>
 </div>
+
 {% endblock %}
