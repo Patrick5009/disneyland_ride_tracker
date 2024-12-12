@@ -1,4 +1,3 @@
-
 /* Responsive background image */
 body {
     background: url('https://res.cloudinary.com/diud2gagh/image/upload/castle_re65eg.webp') no-repeat center center fixed;
@@ -16,7 +15,7 @@ body {
     padding: 20px; 
 }
 
-/* individual list items background*/
+/* individual list items background */
 .bg-light {
     background-color: #2e4c6b !important;
     border-radius: 5px;
@@ -33,11 +32,6 @@ body {
     text-align: center;
     font-size: 18px;
     font-weight: 600;
-}
-
-/* height adjustmant */
-.move-up {
-    margin-top: -10vh; 
 }
 
 /* For red 'DONE |' text in completed rides */
@@ -61,7 +55,9 @@ form input::placeholder {
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: #5BC0DE; 
+    color: #002A3F ; 
+    font-weight: bold;
 }
 
 .btn-danger {
@@ -80,17 +76,29 @@ form input::placeholder {
     color: #002a3f; 
 }
 
+/* delete button contrast fix */
+.btn-darker-red {
+    background-color: #b22222; 
+    color: #ffffff; 
+    border-color: #b22222; 
+    font-weight: bold; 
+}
+.btn-darker-red:hover {
+    background-color: #8b0000; 
+    border-color: #8b0000; 
+}
+
+/* navbar styling */
 .navbar-light {
     background-color: #A5480E !important;    
 }
 .navbar-light .navbar-nav .nav-link {
     color: #F5E8DA !important; 
-    padding: 1.2rem ;
+    padding: 1.2rem;
 }
 
 .navbar-brand {
-    text-shadow: 2px 2px 4px rgba(11, 82, 139, 0.8); 
-    text-shadow: 0 0 8px rgba(5, 27, 45, 0.5); 
+    text-shadow: 2px 2px 4px rgba(11, 82, 139, 0.8), 0 0 8px rgba(5, 27, 45, 0.5); 
     font-weight: bold; 
 }
 
@@ -119,70 +127,60 @@ form input::placeholder {
     font-size: 18px;
 }
 
-
 /* size adjustment for update and delete page backplates */
 .update-delete-backplate{
     max-width: 810px;
 }
 
-/* ride items layout */
+.update-backplate {
+    background-color: #A5480E;
+    border-radius: 10px; 
+    color: #ffffff; 
+}
+
+.delete-backplate {
+    background-color: #dc3545; 
+    color: #ffffff; 
+    border-radius: 10px; 
+    padding: 20px; 
+}
+
+
 .ride-item {
-    display: flex;
+    display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    flex-wrap: nowrap; 
-    text-align: center; 
 }
 
-/* ride content */
-.ride-content {
-    display: flex;
-    flex-direction: row; 
-    align-items: center; 
-    justify-content: space-between;
-    width: 100%;
-}
-
-/* text style for ride */
 .ride-text {
-    flex: 1;
     margin-right: 10px; 
+    text-align: left; 
     white-space: nowrap; 
     overflow: hidden; 
     text-overflow: ellipsis; 
 }
 
-/* stop buttons from stacking */
 .ride-buttons {
-    display: flex;
+    display: flex; 
     gap: 10px; 
-    flex-wrap: nowrap; 
+    justify-content: flex-end; 
 }
 
-
-/* structure for small screens */
-/* center everything and stack text above buttons */
+/* Adjust layout for smaller screens */
 @media (max-width: 500px) {
     .ride-item {
-        flex-direction: column; 
-        justify-content: center; 
-        align-items: center; 
-    }
-
-    .ride-content {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center; 
     }
 
     .ride-text {
+        margin-right: 0; 
         margin-bottom: 10px; 
-        width: 100%;
         text-align: center; 
+        white-space: normal; 
     }
 
     .ride-buttons {
         justify-content: center; 
     }
 }
-
-

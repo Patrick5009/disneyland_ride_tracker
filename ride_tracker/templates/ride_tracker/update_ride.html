@@ -5,17 +5,18 @@ Update Ride
 {% endblock %}
 
 {% block content %}
-<div class="update-delete-backplate container my-5">
-    <!-- Full-width background underlay -->
-    <div class="card shadow p-4">
-        <h3 class="text-center mb-4">Update Ride</h3>
+<div class="update-delete-backplate container text-center my-5">
+    <div class="update-backplate p-4">
+        <h3 class="mb-4">Update Ride</h3>
 
-        <!-- Center the input box -->
-        <form method="POST" action="" class="d-flex justify-content-center">
+        <form method="POST" action="">
             {% csrf_token %}
-            <div class="w-100" style="max-width: 800px;">
+            <div class="mb-3">
                 {{ form.as_p }}
-                <button type="submit" class="btn btn-primary w-100">Update Ride</button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="{% url 'rides' %}" class="btn btn-secondary me-2">Cancel</a>
+                <button type="submit" class="btn btn-primary">Update</button>
             </div>
         </form>
     </div>
