@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load i18n %}
+
 {% block head_title %}{% trans "Sign Up" %}{% endblock %}
 
 {% block content %}
@@ -10,11 +11,20 @@
         <h3 class="text-center mb-3">{% trans "Sign Up" %}</h3>
 
         <!-- Sign-up form -->
-        <!-- Using as_table and wrapping it inside a table to fix stray tr/th/td errors -->
         <form method="POST" action="{% url 'account_signup' %}">
             {% csrf_token %}
             <table>
-              {{ form.as_table }}
+              {% for field in form %}
+                <tr>
+                  <th><label for="{{ field.id_for_label }}">{{ field.label }}{% if field.field.required %}*{% endif %}</label></th>
+                  <td>
+                    {{ field }}
+                    {% if field.help_text %}
+                    <div class="helptext">{{ field.help_text|safe }}</div>
+                    {% endif %}
+                  </td>
+                </tr>
+              {% endfor %}
             </table>
             {% if redirect_field_value %}
             <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
