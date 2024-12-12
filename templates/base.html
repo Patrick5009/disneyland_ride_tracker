@@ -18,10 +18,17 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Favicon -->  <!-- NOT WORKING FIX IT -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="{% static 'icons/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'icons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'icons/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'icons/site.webmanifest' %}"> -->
 </head>
 
-<body class="d-flex flex-column min-vh-100"> 
+<body class="d-flex flex-column min-vh-100">
     <header class="bg-primary text-white p-3">
+        <!-- navbar -->
         <nav class="container navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="{% url 'rides' %}">Disneyland Ride Tracker</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -56,7 +63,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-8 col-sm-10">
                 {% for message in messages %}
-                <div class=" alert {{ message.tags }} alert-success alert-dismissible fade show text-center" role="alert">
+                <div class=" alert {{ message.tags }} alert-success alert-dismissible fade show text-center"
+                    role="alert">
                     {{ message }}
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
@@ -67,21 +75,22 @@
 
     <main class="flex-grow-1 container mt-4">
         <!-- Message Backplate -->
-    <div class="user-status text-center">
-        {% if user.is_authenticated %}
-        <p class="topline">Currently logged in as {{ user }}</p>
-        {% else %}
-        <p class="topline">Plan all the Disneyland rides you want to visit </p>
-        <p>You must <a href="{% url 'account_login' %}">log in</a> or <a href="{% url 'account_signup' %}">sign up</a>to track your rides!</p>
-        {% endif %}
-    </div>
-    <div> 
-        {% block content %}
-        <!-- Page-specific content goes here -->
-        {% endblock %}
-    </div>
+        <div class="user-status text-center">
+            {% if user.is_authenticated %}
+            <p class="topline">Currently logged in as {{ user }}</p>
+            {% else %}
+            <p class="topline">Plan all the Disneyland rides you want to visit </p>
+            <p>You must <a href="{% url 'account_login' %}">log in</a> or <a href="{% url 'account_signup' %}">sign
+                    up</a>to track your rides!</p>
+            {% endif %}
+        </div>
+        <div>
+            {% block content %}
+            <!-- Page specific content goes here -->
+            {% endblock %}
+        </div>
     </main>
-
+    <!-- footer -->
     <footer class="bg-dark text-white text-center py-3 mt-auto">
         <p>&copy; 2024 Patrick Walsh</p>
     </footer>
