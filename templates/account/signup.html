@@ -10,9 +10,12 @@
         <h3 class="text-center mb-3">{% trans "Sign Up" %}</h3>
 
         <!-- Sign-up form -->
+        <!-- Using as_table and wrapping it inside a table to fix stray tr/th/td errors -->
         <form method="POST" action="{% url 'account_signup' %}">
             {% csrf_token %}
-            {{ form.as_table }}
+            <table>
+              {{ form.as_table }}
+            </table>
             {% if redirect_field_value %}
             <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
             {% endif %}
