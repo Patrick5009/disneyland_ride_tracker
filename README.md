@@ -18,10 +18,15 @@ This project was built by Patrick Walsh and is to be graded by Code Institute as
  9. [Resources](#resources)  
  10. [Credits and Acknowledgements](#credits-and-acknowledgements)
 ---
+## User Demographics
+This app is designed for Disneyland visitors looking to make the most of their time—whether they’re first-time guests eager to see it all, seasoned park-goers optimizing their schedule, or families navigating a packed day with kids. It’s ideal for anyone who values efficiency, wants clear visibility into their ride checklist, and prefers a convenient mobile solution to plan their day on-the-go. Whether you have a single-day pass or a multi-day trip, if your priority is to stay organized, save time, and ensure you don’t miss the must-do attractions, this app was built for you.
 # UX
 ## Database Planning
-Describe your database planning process and include diagrams if available.
-![Database Entity Relationship Diagram](pathtoyourdiagram.png)
+The chosen Entity Relationship Diagram (ERD) is deliberately kept simple to maintain a clear focus on delivering the Minimum Viable Product (MVP). This straightforward approach sets a well-defined foundation while preserving the flexibility to develop a new ERD if substantial features or changes are introduced later on.
+![Database Entity Relationship Diagram]<img width="633" alt="ENTITY RELATIONSHIP DIAGRAM" src="https://github.com/user-attachments/assets/4fd3d89f-51f8-4c97-8a73-c71acc622b78" />
+
+Below is a basic user flow chart that focuses on the foundational interactions—registering, logging in, configuring a custom user model, and reaching the home page. Features like adding, deleting, or editing items aren’t included in this initial diagram, as it’s centered on the core functionality required to get users into the app and ready to engage. Future iterations of the flow chart will incorporate these additional steps as the project evolves beyond the Minimum Viable Product stage.<img width="517" alt="USER FLOW CHART" src="https://github.com/user-attachments/assets/646baedb-cb49-48d2-94b1-bd33156810a6" />
+
 ## UX Design
 ### Overview
 Provide a brief overview of the UX design and user experience goals.
