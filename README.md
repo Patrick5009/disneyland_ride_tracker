@@ -380,7 +380,8 @@ The Python files were validated using the Code Institute Python Linter to ensure
 
 <img width="802" alt="models py" src="https://github.com/user-attachments/assets/accfbd89-7fb8-42df-8d5f-1e8384e03e87" />
 
-<img width="897" alt="setting py" src="https://github.com/user-attachments/assets/9e2e92e1-03e1-4b92-9d41-16a74c2cc8b5" />
+<img width="805" alt="settings py" src="https://github.com/user-attachments/assets/e1eab838-5988-476e-83b1-2d2596f8a8ce" />
+
 
 
 <img width="809" alt="urls app py" src="https://github.com/user-attachments/assets/15c3e284-eb04-4569-ac40-8b30ab516735" />
