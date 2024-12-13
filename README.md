@@ -427,8 +427,18 @@ The Python files were validated using the Code Institute Python Linter to ensure
 - Coding Environment: The code was written and updated using Gitpod, a cloud-based development environment.
 
 ### Deployment
-- Hosting: The app was deployed on Heroku, ensuring reliable and scalable hosting.
-  The live app is accessible [Click Here](https://disneyland-ride-tracker-07b2f49cf7e9.herokuapp.com/accounts/signup/)
+
+- Creating the Heroku App: Sign In & Create App: Log in or sign up for a Heroku account, then click on "New" in the Heroku Dashboard and select "Create New App." Give a it a name and pick the region if needed.
+- Connect to GitHub: After creating the app, switch to the "Deploy" tab, choose GitHub as your deployment choice, then link your GitHub account and repository.
+- Configuring Environment Settings: Set Up env.py: In your Django project’s root directory, create an env.py file, import os, and define key environment variables (such as SECRET_KEY and DATABASE_URL).
+- Update settings.py: Modify your settings.py to pull these values from environment variables for the secret key, database, and any other critical settings.
+- Heroku Config Vars: In the Heroku "Settings" page under "Config Vars," add the same variables defined in env.py.
+- Migrate & Configure: Run database migrations to ensure the new database is ready. Also, confirm your static files, templates directories, and ALLOWED_HOSTS are properly set up in settings.py.
+- Creating a Procfile & Deploying Changes: Procfile Creation: At the top level of your project, create a Procfile that includes the command required to run your Django application (e.g., web: gunicorn your_project_name.wsgi).
+- Commit & Push: Commit and push these changes to your GitHub repository so Heroku can pull the latest version of your code.
+- Deploying to Heroku: In Heroku’s "Deploy" tab, select the desired branch and trigger a manual deployment.
+- Monitor & Access: Keep an eye on the build logs for potential errors. After a successful deployment, Heroku will provide a live URL. If any issues arise, adjust your code accordingly and redeploy.
+- The live app is accessible [Click Here](https://disneyland-ride-tracker-07b2f49cf7e9.herokuapp.com/accounts/signup/)
 
 ### Configuration
 - Secret Keys: Sensitive data such as secret keys were securely added to Heroku's Config Vars to protect the application.
