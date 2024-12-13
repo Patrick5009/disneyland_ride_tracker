@@ -33,7 +33,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['8000-patrick5009-disneylandr-fhezgyfw2gq.ws.codeinstitute-ide.net', 'disneyland-ride-tracker-07b2f49cf7e9.herokuapp.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net','https://*.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com']
 
 
 # Application definition
