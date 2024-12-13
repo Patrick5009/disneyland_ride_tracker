@@ -272,26 +272,32 @@ Sort rides by priority, location, or estimated wait time.
 # Technology Stack
 
 Frontend
+
 HTML5: For structuring the content and creating semantic web pages.
 CSS3: For styling and ensuring a visually appealing design.
 Bootstrap: A responsive front-end framework for mobile-first design.
 
 Backend
+
 Python: For server-side logic and handling backend functionality.
 Django: A robust web framework for managing the app’s backend, authentication, and database interactions.
 
 Database
+
 PostgreSQL: A reliable and scalable relational database for storing user accounts and ride data.
 
 Hosting and Deployment
+
 Heroku: For deploying and hosting the live app.
 Gunicorn: As the HTTP server for running the Django application.
 
 Version Control
+
 Git: For version control during development.
 GitHub: For code storage, collaboration, and project management.
 
 Additional Tools
+
 Balsamiq: For creating wireframes and planning the app’s design.
 Cloudinary: For potential hosting of static files and images (optional or planned future use).
 
