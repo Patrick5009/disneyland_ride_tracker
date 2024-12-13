@@ -14,10 +14,9 @@ This project was built by Patrick Walsh and is to be graded by Code Institute as
  4. [Features Left to Implement](#features-left-to-implement)  
  5. [Technology Used](#technology-used) 
  6. [Testing](#testing-and-validation)  
- 7. [Bugs](#known-bugs)  
- 8. [Deployment](#deployment)
- 9. [Resources](#resources)  
- 10. [Credits and Acknowledgements](#credits-and-acknowledgements)
+ 7. [Deployment](#deployment)
+ 8. [Resources](#resources)  
+ 9. [Credits and Acknowledgements](#credits-and-acknowledgements)
 ---
 ## User Demographics
 This app is designed for Disneyland visitors looking to make the most of their time—whether they’re first-time guests eager to see it all, seasoned park-goers optimizing their schedule, or families navigating a packed day with kids. It’s ideal for anyone who values efficiency, wants clear visibility into their ride checklist, and prefers a convenient mobile solution to plan their day on-the-go. Whether you have a single-day pass or a multi-day trip, if your priority is to stay organized, save time, and ensure you don’t miss the must-do attractions, this app was built for you.
