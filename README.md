@@ -1,7 +1,8 @@
-# Welcome to The Disneyland Tracker App<img width="1267" alt="log in page" src="https://github.com/user-attachments/assets/0c7f4a9e-57b7-4c8e-8a74-5687a4228d4b" />
+# Welcome to The Disneyland Ride Tracker App
+<img width="1267" alt="log in page" src="https://github.com/user-attachments/assets/0c7f4a9e-57b7-4c8e-8a74-5687a4228d4b" />
 
 ## Project Description
-### The Disneyland Tracker app will help you visit the rides you plan for in the limited time you have.
+### The Disneyland Ride Tracker app will help you visit the rides you plan for in the limited time you have.
 This responsive app will let you create a personalised list of all the rides you want to visit while on your trip at Disneyland. You'll be able to add whatever ride is available at the resort, activley keep track of any rides you have already been on and see any of the remaining ones you have yet to visit, easily and responsively on your phone while you travel around the resort. You can easily pick from a list of pre-built ride names or add your own name for the ride. Once you have marked them as complete, their status is marked as such, making it easy to see any rides you have yet to visit. If you add an incorrect ride you can easily delete it or edit it. The Disneyland Tracker app will save you so much time and get you organised for maximum fun. If you only have a single day pass at the resort then this app is a must have. 
 # [Link to Live Disneyland Tracker site](https://disneyland-ride-tracker-07b2f49cf7e9.herokuapp.com/accounts/signup/)
 This project was built by Patrick Walsh and is to be graded by Code Institute as his final project in an intensive Full Stack software developer bootscamp.
@@ -23,28 +24,46 @@ This app is designed for Disneyland visitors looking to make the most of their t
 # UX
 ## Database Planning
 The chosen Entity Relationship Diagram (ERD) is deliberately kept simple to maintain a clear focus on delivering the Minimum Viable Product (MVP). This straightforward approach sets a well-defined foundation while preserving the flexibility to develop a new ERD if substantial features or changes are introduced later on.
-![Database Entity Relationship Diagram]<img width="633" alt="ENTITY RELATIONSHIP DIAGRAM" src="https://github.com/user-attachments/assets/4fd3d89f-51f8-4c97-8a73-c71acc622b78" />
 
-Below is a basic user flow chart that focuses on the foundational interactions—registering, logging in, configuring a custom user model, and reaching the home page. Features like adding, deleting, or editing items aren’t included in this initial diagram, as it’s centered on the core functionality required to get users into the app and ready to engage. Future iterations of the flow chart will incorporate these additional steps as the project evolves beyond the Minimum Viable Product stage.<img width="517" alt="USER FLOW CHART" src="https://github.com/user-attachments/assets/646baedb-cb49-48d2-94b1-bd33156810a6" />
+<img width="633" alt="ENTITY RELATIONSHIP DIAGRAM" src="https://github.com/user-attachments/assets/4fd3d89f-51f8-4c97-8a73-c71acc622b78" />
+
+Below is a basic user flow chart that focuses on the foundational interactions—registering, logging in, configuring a custom user model, and reaching the home page. Features like adding, deleting, or editing items aren’t included in this initial diagram, as it’s centered on the core functionality required to get users into the app and ready to engage. Future iterations of the flow chart will incorporate these additional steps as the project evolves beyond the Minimum Viable Product stage.
+
+<img width="517" alt="USER FLOW CHART" src="https://github.com/user-attachments/assets/646baedb-cb49-48d2-94b1-bd33156810a6" />
 
 ## UX Design
 ### Overview
-Provide a brief overview of the UX design and user experience goals.
+The Disneyland Tracker app is designed with a user-centric approach, focusing on simplicity, responsiveness, and efficiency. The app’s UX prioritizes an intuitive interface that allows users to easily manage their ride list while navigating Disneyland.The user stories guided the design process, ensuring the app addresses key user goals, such as creating and managing a personalized ride list, account security, and mobile usability. Clear Feedback mechanisms enhance the user experience, making the app a reliable tool for Disneyland visitors.
 ### Site User
-Describe the primary users of your site.
+- Casual park visitors: Individuals visiting Disneyland for the first time or infrequently, looking to maximize their experience with minimal planning.
+- Disney enthusiasts: Regular visitors who want a convenient way to keep track of rides and explore new attractions.
+- Families and groups: Visitors managing multiple schedules who need an organized way to coordinate and track rides for everyone.
+  
+These users share a need for efficiency, ease of use, and a mobile-friendly solution to manage their Disneyland experience.
 ### Goal
-Explain the main goal of your site.
+The main goal of the Disneyland Tracker app is to provide users with an efficient and stress-free way to plan and track their Disneyland experience. By enabling users to create a personal ride list, manage their progress. The app helps visitors make the most of their time at the park. This ensures users can focus on enjoying their trip rather than worrying about logistics.
 ## Wireframes
-Include your wireframes here.
-![Wireframe Example](pathtoyourwireframe.png)
-##### [ Back to Top ](#table-of-contents)
+The Disneyland Tracker app’s wireframes were created using Balsamiq, focusing on both full-screen and mobile layouts. These wireframes provide a visual blueprint of the app's design and functionality.
+The full-screen wireframe illustrates the layout for desktop and larger devices. It emphasizes clarity with a central ride tracker section to manage and view rides efficiently.
+Clear buttons for adding, editing, and deleting rides.
+
+<img width="812" alt="WIREFRAME big screen" src="https://github.com/user-attachments/assets/60886411-736d-4df5-8185-531d5668dfe6" />
+
+The mobile wireframe is optimized for smaller screens, ensuring usability on the go. Key features include a responsive design that adapts the navigation bar into a collapsible menu and Stacked content layout to accommodate vertical scrolling.
+
+<img width="206" alt="WIREFRAME mobile" src="https://github.com/user-attachments/assets/88fa41b4-2740-4c28-891b-0374e755b7fd" />
+
 # Agile Development
-Describe your agile development process and link to your Kanban board or project management tool.
+These user stories provided a clear roadmap for development, ensuring each feature was aligned with the app’s purpose. They also helped prioritize functionality, starting with core features like account creation, ride management, and responsive design. 
+
+https://github.com/users/Patrick5009/projects/7
+<img width="1279" alt="ScreenHunter 1265" src="https://github.com/user-attachments/assets/ac6d45c3-674d-4a5e-b68a-31c89598f890" />
+
 ### User Stories Overview
 List your user stories
 1. Title [User Story Title]
    - As a [user type], I can [action] so that [goal].
-##### [ Back to Top ](#table-of-contents)
+
 # Features Implemented
 List and describe the features implemented in your project.
 ## Home Page
