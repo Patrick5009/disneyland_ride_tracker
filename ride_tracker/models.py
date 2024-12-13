@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 
 # Ride model, representing a ride in the tracker.
 
+
 class Ride(models.Model):
 
     # The name of the ride, with a maximum length of 50 characters.
@@ -10,7 +11,7 @@ class Ride(models.Model):
 
     # A boolean field indicating whether the ride has been visited.
     state = models.BooleanField(default=False)
-    
+
     # A foreign key linking the ride to a specific user.
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
 

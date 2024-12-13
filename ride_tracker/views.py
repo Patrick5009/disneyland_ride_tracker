@@ -1,8 +1,8 @@
-from django.shortcuts import render, redirect, get_object_or_404  
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required  
-from .models import *  
-from .forms import *  
+from django.contrib.auth.decorators import login_required
+from .models import *
+from .forms import *
 
 
 # Main page to display the ride tracker
@@ -11,28 +11,29 @@ from .forms import *
 def index(request):
     # filter for the specific user
     ride_tracker = Ride.objects.filter(user=request.user)
-    form = RideForm()  
+    form = RideForm()
 
     # get the ride name from the form
     if request.method == 'POST':
-        ride_name = request.POST.get('ride_name')  
-        state = request.POST.get('state') == 'on'  
+        ride_name = request.POST.get('ride_name')
+        state = request.POST.get('state') == 'on'
 
         # only save it if a ride name is given
-        if ride_name:  
+        if ride_name:
             Ride.objects.create(
                 ride_name=ride_name,
                 state=state,
-                user=request.user  
+                user=request.user
             )
             # success message
-            messages.success(request, f'Ride "{ride_name}" has been added to the tracker!')
-        return redirect('/')  
+            messages.success(
+                request,
+                f'Ride "{ride_name}" has been added to the tracker!'
+            )
+        return redirect('/')
 
     context = {'ride_tracker': ride_tracker, 'form': form}
     return render(request, 'ride_tracker/rides.html', context)
-
-
 
 
 # Update the ride list
@@ -48,13 +49,14 @@ def updateRide(request, pk):
         form = RideForm(request.POST, instance=ride)
         if form.is_valid():
             form.save()
-            messages.success(request, f'Ride "{ride.ride_name}" has been updated successfully!')
+            messages.success(
+                request,
+                f'Ride "{ride.ride_name}" has been updated successfully!'
+            )
             return redirect('/')
 
     context = {'form': form}
     return render(request, 'ride_tracker/update_ride.html', context)
-
-
 
 
 # Deleting rides
@@ -65,9 +67,12 @@ def deleteRide(request, pk):
     item = get_object_or_404(Ride, id=pk, user=request.user)
 
     if request.method == 'POST':
-        # delete the ride 
+        # delete the ride
         item.delete()
-        messages.success(request, f'Ride "{item.ride_name}" has been deleted from the tracker.')
+        messages.success(
+            request,
+            f'Ride "{item.ride_name}" has been deleted from the tracker.'
+        )
         return redirect('/')
 
     context = {'item': item}
