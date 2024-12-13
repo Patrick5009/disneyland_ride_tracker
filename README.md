@@ -435,8 +435,8 @@ The Python files were validated using the Code Institute Python Linter to ensure
 
 
 # Resources
-- [Resource 1](#)
-- [Resource 2](#)
+- Main background images was taken from royalty free stock photos on Pexels
+- Color scheme template that i built on was was from bootswatch
 ##### [ Back to Top ](#table-of-contents)
 # Credits and Acknowledgements
 ## Images
