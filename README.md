@@ -435,14 +435,18 @@ The Python files were validated using the Code Institute Python Linter to ensure
 
 
 # Resources
-- Main background images was taken from royalty free stock photos on Pexels
-- Color scheme template that i built on was was from bootswatch
+- [Pexels](https://www.pexels.com/)
+- [bootswatch](https://www.bootswatch.com/)
+- [Code Institute Full Stack Development course materials](https://codeinstitute.net/)
+- [Cloudinary docs](https://cloudinary.com/documentation/programmable_media_overview)
+- [Bootstrap docs](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- [Balsamiq](https://balsamiq.com/)
+
 ##### [ Back to Top ](#table-of-contents)
 # Credits and Acknowledgements
-## Images
-- Source 1
-- Source 2
-## Code
-- Source 1
-- Source 2
+Thanks to [to-do genie](https://github.com/Tedbot2000/todo-genie-01/tree/main) for inspiration,
+Thanks to Dennis for his tutorial for help with the views [Dennis Ivy](https://www.youtube.com/watch?v=4RWFvXDUmjo),
+Implementation of dropdown list and bug fixes [Chat gpt](https://chatgpt.com/),
+Thanks to Steve for a Read me template to get me started [Steven Bevan](https://github.com/Stephen-Bevan)
+Thanks to David Calikes my scrum master and tutor for the motivation and help [David Calikes](https://github.com/davidcalikes)
 ##### [ Back to Top ](#table-of-contents)
