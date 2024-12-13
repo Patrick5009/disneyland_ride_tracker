@@ -12,7 +12,7 @@ This project was built by Patrick Walsh and is to be graded by Code Institute as
  2. [Agile Development](#agile-development)
  3. [Features Implemented](#features-implemented)  
  4. [Features Left to Implement](#future-features)  
- 5. [Technology Used](#technology-used) 
+ 5. [Technology Used](#Technology-used) 
  6. [Testing](#testing-and-validation)  
  7. [Deployment](#deployment)
  8. [Resources](#resources)  
