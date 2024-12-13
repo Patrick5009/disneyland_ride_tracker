@@ -291,7 +291,7 @@ This color scheme was chosen to ensure a cohesive, visually pleasing aesthetic w
 
 
 
-# Technology Stack
+# Technology used
 
 Frontend
 - HTML5: For structuring the content and creating semantic web pages.
