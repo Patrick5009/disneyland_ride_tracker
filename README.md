@@ -397,54 +397,44 @@ The Python files were validated using the Code Institute Python Linter to ensure
 
 
 
-### HOME PAGE
- Test                                      Result 
--------------------------------------------------
- Test description                         Pass   
-### ABOUT PAGE
- Test                                      Result 
--------------------------------------------------
- Test description                         Pass   
-### PROFILE PAGE
- Test                                      Result 
--------------------------------------------------
- Test description                         Pass   
-### LOGIN PAGE
- Test                                      Result 
--------------------------------------------------
- Test description                         Pass   
-### REGISTRATION PAGE
- Test                                      Result 
--------------------------------------------------
- Test description                         Pass   
-### LOGOUT PAGE
- Test                                      Result 
--------------------------------------------------
- Test description                         Pass   
-### SECURITY
- Test                                      Result 
--------------------------------------------------
- Test description                         Pass   
-##### [ Back to Top ](#table-of-contents)
-# Known Bugs
-List any known bugs here.
-##### [ Back to Top ](#table-of-contents)
+## Home Page:
+ - PASS - Input/Write functionality allows users to write or pick a ride.
+ - PASS - Users must be logged in to create rides.
+ - PASS - Users cannot delete or edit rides or created by other users.
+    
+## Login Page:
+ - PASS - Secure signup functionality allows users to register securely.
+ - PASS - Successful login redirects users to the home page.   
+
+ ## Registration Page:
+ - PASS - Secure login functionality allows users to log in securely.
+ - PASS - Successful registration redirects users to the home page.
+
+ ## Logout Page:
+ - PASS - Logout functionality allows users to sign out securely.
+ - PASS - After successful logout, users are redirected to the home page.
+
+ ## Edit / Delete Pages:
+ - PASS - Users can edit and delete their own rides.
+ - PASS - Users must be logged in to edit or delete their own rides.
+ - PASS - Users can click cancel buttons to exit from edit and delete pages 
+
+
 # Deployment 
-## Deployment Guide
-### Deployment Steps
-#### Creating the Heroku App
-- Step-by-step instructions.
-#### Setting Up Environment Variables
-- Step-by-step instructions.
-#### Creating Procfile and Pushing Changes
-- Step-by-step instructions.
-#### Heroku Deployment
-- Step-by-step instructions.
-### Forking the Repository
-- Step-by-step instructions.
-### Creating a Clone of the Repository
-- Step-by-step instructions.
-##### [ Back to Top ](#table-of-contents)
+### Development
+- Repository: The repository was created on GitHub, serving as the central location for code storage, version control, and collaboration.
+
+- Coding Environment: The code was written and updated using Gitpod, a cloud-based development environment.
+
+### Deployment
+- Hosting: The app was deployed on Heroku, ensuring reliable and scalable hosting.
+  The live app is accessible [Click Here](https://disneyland-ride-tracker-07b2f49cf7e9.herokuapp.com/accounts/signup/)
+
+### Configuration
+- Secret Keys: Sensitive data such as secret keys were securely added to Heroku's Config Vars to protect the application.
+- Database: The Code Institute PostgreSQL database was connected to Heroku to manage and store app data.
+
+
 # Resources
 - [Resource 1](#)
 - [Resource 2](#)
