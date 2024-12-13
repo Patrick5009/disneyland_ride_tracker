@@ -60,40 +60,215 @@ https://github.com/users/Patrick5009/projects/7
 <img width="1279" alt="ScreenHunter 1265" src="https://github.com/user-attachments/assets/ac6d45c3-674d-4a5e-b68a-31c89598f890" />
 
 ### User Stories Overview
-List your user stories
-1. Title [User Story Title]
-   - As a [user type], I can [action] so that [goal].
+As a User I can create an account so that I have a personal ride list that keeps track of what rides I have been on.
+ - Sign up page includes fields for name password and email.
+ - A confirmation message is shown upon registration.
+   
+As a User I can log in to my account so that I can access my personal ride tracker and continue tracking my rides.
+- Login page includes name and password fields.
+- Login page redirects to the ride tracker page after login.
+  
+As a user I can add a ride to my ride list so that I can track which attractions I want to visit during my time at Disneyland.
+- Have a text input field for entering a ride name.
+- Clicking "Add Ride" button adds the ride to the ride list.
+- The ride is saved to the user’s account in the database.
+  
+As a user I can delete a ride from my list so that I can remove rides I’ve already been on or no longer have time for.
+- Each ride in the list has a "Delete" button.
+- Clicking the delete button removes the ride from the list and database.
+- An 'Are You Sure' prompt appears before accepting delete.
+  
+As a user I can edit the name of a ride on my list so that I can correct any mistakes or update my ride plans.
+- Each ride has an "Edit" button.
+- Clicking "Edit" creates a text field with the current ride name in it
+- Clicking "Update Ride" saves the new ride name and updates the ride list.
+  
+As a user I can log out of my account so that my ride list remains private.
+- A "Log Out" button is present on the navbar.
+- Clicking "Log Out" logs out user and redirects to the login page.
+  
+As a user I can use an clean and simple interface so that I can quickly and easily manage my ride list without confusion.
+- The ride tracker page has clear buttons for adding, editing, and deleting rides.
+- The list updates immediately after any action is performed.
+- Navigation between pages is obvious and simple.
+- Wrong login shows error message.
+  
+As a user I can see a confirmation message when I perform an action so that I know my changes were successful.
+- A pop-up message appears after adding editing or deleting a ride.
+- The message disappears after clicking "Dismiss."
+  
+As a user I can view my list of rides so that I know exactly how many rides I have left to go on.
+- All rides added are shown in a list.
+- All ride entries include the ride name and edit/delete buttons.
+  
+As a user I can use the app on my phone so that I can manage my ride list on the go.
+- Acceptance Criteria
+- The app layout is responsive and elements resize for smaller screens.
 
 # Features Implemented
-List and describe the features implemented in your project.
-## Home Page
-- Feature 1
-- Feature 2
-## About Page
-- Feature 1
-- Feature 2
-## Profile Page
-- Feature 1
-- Feature 2
+## Home Page 
+
+<img width="1267" alt="home page" src="https://github.com/user-attachments/assets/a1def1d1-c114-4f78-8612-a421bb630947" />
+
+The home page of the Disneyland Tracker app serves as the central hub for managing and tracking rides. Its key features include:
+1. Ride List Display
+Displays a list of all rides added by the user.
+Each ride entry includes:
+The ride name.
+"Edit" and "Delete" buttons for easy management.
+Status indicator showing whether the ride is marked as "Completed" or "Pending."
+2. Add Ride Section
+A text input field for entering the name of a ride.
+An "Add Ride" button that adds the new ride to the user’s list and saves it in the database.
+3. Action Feedback
+Confirmation messages appear after actions such as adding, editing, or deleting a ride.
+Messages provide real-time feedback, ensuring users know their actions were successful.
+4. Edit Ride
+Clicking "Edit" opens a text field with the current ride name pre-filled.
+The "Update Ride" button saves the updated name, refreshing the list with the changes.
+5. Delete Ride
+Each ride has a "Delete" button.
+A confirmation prompt ("Are you sure?") appears before removing the ride from the list.
+Deleted rides are also removed from the database.
+6. Navigation
+Clear and intuitive navigation links in the navbar for:
+Logging out.
+Returning to the home page (if applicable).
+The navbar is responsive, collapsing into a hamburger menu on smaller screens.
+7. Mobile-Responsive Design
+Optimized for use on mobile devices.
+Layout adjusts for smaller screens with:
+Vertical stacking of rides.
+Large, touch-friendly buttons for actions.
+Collapsible navigation bar for space efficiency.
+8. Dynamic Updates
+The ride list updates in real time after any action, such as adding, editing, or deleting rides, without requiring a page reload.
+These features make the home page the core of the user experience, providing a clean, efficient, and user-friendly platform to manage Disneyland ride plans.
+
+
 ## Login Page
-- Feature 1
-- Feature 2
+
+<img width="1267" alt="log in page" src="https://github.com/user-attachments/assets/f55adbc1-1626-4232-ae40-a50f1bb72e92" />
+
+The login page ensures only authorized users can access the app while providing a clean, secure, and efficient login experience. 
+
+Input Fields
+Fields for username/email and password.
+Clearly labeled for easy navigation.
+Login Button
+A "Log In" button submits credentials for verification.
+Redirects to the home page on success.
+Error Handling
+Displays error messages for incorrect credentials (e.g., "Invalid username or password").
+Prompts users to try again.
+Forgotten Password
+Link to the registration page for new users.
+Mobile-Friendly Design
+Fully responsive layout with touch-friendly elements for mobile users.
+Security
+Uses HTTPS for encrypted data transmission.
+Secure password hashing ensures user safety.
+Redirects
+Redirects to the home page after login.
+Automatically directs unauthorized users to the login page.
+
 ## Registration Page
-- Feature 1
-- Feature 2
+
+<img width="1267" alt="register page" src="https://github.com/user-attachments/assets/6a16e898-c471-4d30-9144-b0faa40388e5" />
+
+The registration page allows new users to create an account for accessing their personalized Disneyland ride tracker. It is designed for simplicity and security.
+
+Input Fields
+Fields for username, email, and password.
+Clear instructions for required information.
+Sign-Up Button
+A "Sign Up" button submits the form for account creation.
+Redirects to the login page or home page upon successful registration.
+Error Handling
+Displays error messages for invalid inputs (e.g., "Email already in use").
+Ensures users know how to fix errors.
+Confirmation Message
+A success message confirms account creation.
+Login Redirect
+Link to the login page for users who already have an account.
+Mobile-Friendly Design
+Optimized for all devices with responsive input fields and buttons.
+Security
+Uses HTTPS for secure data transmission.
+Ensures password hashing for account safety.
+
 ## Logout Page
-- Feature 1
-- Feature 2
+
+<img width="1267" alt="logout page" src="https://github.com/user-attachments/assets/077add03-d460-4104-b693-076c76751676" />
+
+Log-Out Button
+
+A prominent "Log Out" button allows users to securely end their session.
+Clicking the button redirects to the login page.
+Confirmation
+Users receive feedback confirming they have logged out successfully.
+Navbar Update
+After logging out, the navbar adjusts to display login and registration options only.
+Security
+Ends the session securely to prevent unauthorized access to the user's account.
+Mobile-Friendly Design
+Fully responsive layout ensures accessibility on all devices.
+
 ### Responsive Design
-- Feature 1
-- Feature 2
+
+<img width="185" alt="ScreenHunter 1309" src="https://github.com/user-attachments/assets/da5154df-6802-4cf4-b83b-02c2ecebc2ca" />
+
+The responsive design ensures that users can efficiently manage their ride lists whether they’re at home on a desktop or navigating Disneyland on their mobile devices, providing flexibility and convenience.
+
+Flexible Layout
+Automatically adjusts the layout to fit screen sizes, from large desktop monitors to small mobile screens.
+Content stacks vertically on smaller screens for better readability.
+Responsive Navbar
+Collapsible navbar transforms into a hamburger menu on smaller screens for easy navigation.
+Touch-Friendly Elements
+Buttons and interactive elements are sized and spaced for optimal usability on touchscreens.
+Dynamic Content Display
+Ride lists and forms adapt to the available screen space without losing functionality.
+Optimized Fonts and Images
+Scalable fonts and images maintain clarity and usability on all screen sizes.
+
+
 ## Additional Security Features
-- Feature 1
-- Feature 2
-##### [ Back to Top ](#table-of-contents)
+These security features ensure that user data remains private and protected, fostering trust and providing a secure environment
+
+- Secure Authentication
+User credentials are securely encrypted during login and registration using HTTPS.
+Passwords are hashed and stored securely in the database to prevent unauthorized access.
+
+- Session Management
+User sessions are terminated securely upon logging out, preventing access from other devices or browsers.
+
+- Input Validation
+All user inputs are validated to prevent SQL injection, XSS, and other vulnerabilities.
+Invalid inputs display clear error messages for correction.
+
+- Access Control
+Pages requiring authentication are restricted to logged-in users.
+Unauthorized users are redirected to the login page with a notification.
+
+- CSRF Protection
+Cross-Site Request Forgery (CSRF) tokens are implemented on all forms to prevent unauthorized actions.
+
 # Future Features
-List and describe the features you plan to implement in the future.
-##### [ Back to Top ](#table-of-contents)
+
+- Progress Tracking
+Visual progress tracker (e.g., percentage of rides completed).
+Achievement badges for milestones (e.g., "5 Rides Completed," "Thrill Seeker").
+
+- Park Navigation
+Interactive map integration to locate rides within the park.
+Directions to rides from the user’s current location using GPS.
+
+- Ride Categories and Sorting
+Group rides by categories like "Thrill Rides," "Family Rides," or "Kid-Friendly."
+Sort rides by priority, location, or estimated wait time.
+
+
 # Technology Stack
 List the technologies used in your project.
 - Technology 1
