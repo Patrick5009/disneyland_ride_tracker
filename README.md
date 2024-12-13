@@ -11,7 +11,7 @@ This project was built by Patrick Walsh and is to be graded by Code Institute as
  1. [UX](#ux)
  2. [Agile Development](#agile-development)
  3. [Features Implemented](#features-implemented)  
- 4. [Features Left to Implement](#features-left-to-implement)  
+ 4. [Features Left to Implement](#future-features)  
  5. [Technology Used](#technology-used) 
  6. [Testing](#testing-and-validation)  
  7. [Deployment](#deployment)
