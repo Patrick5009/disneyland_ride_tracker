@@ -5,7 +5,7 @@
 ### The Disneyland Ride Tracker app will help you visit the rides you plan for in the limited time you have.
 This responsive app will let you create a personalised list of all the rides you want to visit while on your trip at Disneyland. You'll be able to add whatever ride is available at the resort, activley keep track of any rides you have already been on and see any of the remaining ones you have yet to visit, easily and responsively on your phone while you travel around the resort. You can easily pick from a list of pre-built ride names or add your own name for the ride. Once you have marked them as complete, their status is marked as such, making it easy to see any rides you have yet to visit. If you add an incorrect ride you can easily delete it or edit it. The Disneyland Tracker app will save you so much time and get you organised for maximum fun. If you only have a single day pass at the resort then this app is a must have. 
 # [Link to Live Disneyland Tracker site](https://disneyland-ride-tracker-07b2f49cf7e9.herokuapp.com/accounts/signup/)
-This project was built by Patrick Walsh and is to be graded by Code Institute as his final project in an intensive Full Stack software developer bootscamp.
+This project was built by Patrick Walsh and earned him a Diploma from the Tech Industry Alliance and Code Institute as his final project in an intensive Full Stack software developer bootscamp.
 ---
 # Table of Contents  
  1. [UX](#ux)
